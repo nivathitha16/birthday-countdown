@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+
+<style>
+body{
+background:#fff0f5;
+text-align:center;
+font-family:Arial;
+padding-top:100px;
+}
+
+h1{
+color:#ff4d6d;
+}
+
+#countdown{
+font-size:32px;
+margin-top:20px;
+}
+
+button{
+padding:12px;
+background:#ff4d6d;
+color:white;
+border:none;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>❤️ Countdown till 29 May 2026 ❤️</h1>
+
+<p>Every day with you is special 💝</p>
+
+<div id="countdown"></div>
+
+<button onclick="fireworks()">
+🎆 Click for Surprise
+</button>
+
+<script>
+
+var countDownDate =
+new Date("May 29, 2026").getTime();
+
+setInterval(function(){
+
+var now=new Date().getTime();
+
+var distance=countDownDate-now;
+
+var days=Math.floor(distance/(1000*60*60*24));
+
+document.getElementById(
+"countdown"
+).innerHTML=
+days+" Days Left ❤️";
+
+},1000);
+
+function fireworks(){
+alert("Happy Birthday Jensu Thango❤️🫶🏻");
+}
+
+<script>
+
+</body>
+</html>
