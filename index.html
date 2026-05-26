@@ -5,8 +5,7 @@
 
 <meta name="viewport"
 content=
-"width=device-width,
-initial-scale=1">
+"width=device-width,initial-scale=1">
 
 <title>
 For You ❤️
@@ -67,25 +66,29 @@ z-index:-1;
 .container{
 
 padding:
-60px 25px;
+45px 22px;
 
 }
 
 h1{
 
-font-size:58px;
+font-size:34px;
 
-line-height:1.15;
+line-height:1.25;
 
-margin-bottom:25px;
+margin-bottom:18px;
+
+padding:0 10px;
 
 }
 
 p{
 
-font-size:22px;
+font-size:16px;
 
 opacity:.85;
+
+padding:0 10px;
 
 }
 
@@ -96,9 +99,9 @@ display:grid;
 grid-template-columns:
 1fr 1fr;
 
-gap:20px;
+gap:16px;
 
-margin-top:45px;
+margin-top:35px;
 
 }
 
@@ -110,12 +113,12 @@ rgba(
 255,
 255,
 255,
-0.85
+0.88
 );
 
-padding:30px;
+padding:20px;
 
-border-radius:30px;
+border-radius:26px;
 
 backdrop-filter:
 blur(10px);
@@ -128,14 +131,14 @@ rgba(
 255,
 150,
 180,
-0.2
+0.18
 );
 
 }
 
 .number{
 
-font-size:60px;
+font-size:42px;
 
 font-weight:bold;
 
@@ -145,7 +148,7 @@ color:#8b1f36;
 
 .label{
 
-font-size:18px;
+font-size:14px;
 
 margin-top:10px;
 
@@ -173,9 +176,9 @@ background:white;
 
 padding:30px;
 
-border-radius:30px;
+border-radius:28px;
 
-width:300px;
+width:280px;
 
 box-shadow:
 
@@ -191,11 +194,11 @@ z-index:999;
 
 .popup img{
 
-width:170px;
+width:150px;
 
-border-radius:20px;
+border-radius:18px;
 
-margin-top:10px;
+margin-top:12px;
 
 }
 
@@ -214,9 +217,9 @@ border:none;
 color:white;
 
 padding:
-14px 24px;
+12px 22px;
 
-border-radius:25px;
+border-radius:22px;
 
 margin-top:15px;
 
@@ -226,7 +229,7 @@ margin-top:15px;
 
 position:fixed;
 
-font-size:24px;
+font-size:22px;
 
 animation:
 float 10s linear infinite;
@@ -277,21 +280,15 @@ opacity:0;
 
 <h1>
 
-Counting down
+Counting down every moment
 
-every moment
-
-until your special
-
-day arrives...
+until your special day arrives...
 
 </h1>
 
 <p>
 
-because some people
-
-are worth waiting for ✨
+because some people are worth waiting for ✨
 
 </p>
 
@@ -381,26 +378,13 @@ class="popup">
 
 <p>
 
-Close your eyes
-
-and make a wish 💝
+Close your eyes and make a wish 💝
 
 </p>
 
 <button
-
 onclick=
-
-document
-.getElementById(
-'wishPopup'
-)
-
-.style.display=
-
-'none'
-
->
+"document.getElementById('wishPopup').style.display='none'">
 
 Okay ❤️
 
@@ -425,18 +409,12 @@ The wait is over 🫶🏻
 </p>
 
 <img
-
 src=
-
-"https://i.pinimg.com/736x/1f/7f/7c/1f7f7ca25c1cbdf2fd8992ef1a88cb9d.jpg"
-
->
+"https://i.pinimg.com/736x/1f/7f/7c/1f7f7ca25c1cbdf2fd8992ef1a88cb9d.jpg">
 
 <p>
 
-Hope this year
-
-brings happiness ✨
+Hope this year brings happiness ✨
 
 </p>
 
@@ -508,29 +486,25 @@ diff%
 document
 .getElementById(
 "days"
-)
-.innerHTML=
+).innerHTML=
 days;
 
 document
 .getElementById(
 "hours"
-)
-.innerHTML=
+).innerHTML=
 hours;
 
 document
 .getElementById(
 "mins"
-)
-.innerHTML=
+).innerHTML=
 mins;
 
 document
 .getElementById(
 "secs"
-)
-.innerHTML=
+).innerHTML=
 secs;
 
 if(
@@ -604,7 +578,6 @@ Math.random()*5
 e.style.left=
 
 Math.random()*100
-
 +"vw";
 
 document.body
