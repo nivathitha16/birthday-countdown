@@ -3,6 +3,9 @@
 
 <head>
 
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
 <title>For You ❤️</title>
 
 <style>
@@ -11,113 +14,132 @@ body{
 
 margin:0;
 
-background:linear-gradient(
-to bottom,
-#fff0f5,
-#ffe4ec
-);
+font-family:Georgia;
 
-font-family:Arial;
+background:#fdf8f2;
 
 text-align:center;
 
 overflow:hidden;
 
+color:#5a2a2a;
+
 }
 
 .container{
 
-padding-top:100px;
-
-z-index:2;
-
-position:relative;
+padding-top:70px;
 
 }
 
 h1{
 
-color:#ff4d6d;
+font-size:42px;
+
+line-height:1.3;
+
+}
+
+.grid{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}
+
+.box{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+width:90px;
+
+box-shadow:
+0 5px 20px
+rgba(0,0,0,.1);
+
+}
+
+.number{
 
 font-size:40px;
 
-}
-
-p{
-
-font-size:20px;
-
-color:#444;
-
-}
-
-#countdown{
-
-font-size:35px;
-
 font-weight:bold;
 
-color:#ff4d6d;
+color:#7d0f24;
 
-margin-top:20px;
+}
+
+.label{
+
+margin-top:8px;
+
+font-size:14px;
+
+}
+
+.popup{
+
+display:none;
+
+position:fixed;
+
+top:50%;
+
+left:50%;
+
+transform:
+translate(-50%,-50%);
+
+background:white;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:
+0 10px 30px
+rgba(0,0,0,.2);
+
+z-index:999;
+
+width:300px;
+
+}
+
+img{
+
+width:160px;
+
+border-radius:20px;
+
+margin-top:10px;
 
 }
 
 button{
 
-margin-top:30px;
-
-padding:15px;
-
-font-size:18px;
-
-background:#ff4d6d;
+background:#7d0f24;
 
 color:white;
 
+padding:14px 25px;
+
 border:none;
 
-border-radius:15px;
+border-radius:25px;
 
-cursor:pointer;
-
-}
-
-.heart{
-
-position:fixed;
-
-font-size:20px;
-
-animation:float 8s linear infinite;
-
-opacity:0.7;
-
-}
-
-@keyframes float{
-
-0%{
-
-transform:translateY(100vh);
-
-}
-
-100%{
-
-transform:translateY(-100px);
-
-}
-
-}
-
-.footer{
-
-margin-top:50px;
-
-font-size:18px;
-
-color:#666;
+margin-top:15px;
 
 }
 
@@ -129,147 +151,262 @@ color:#666;
 
 <div class="container">
 
-<h1>❤️ Happy Birthday ❤️</h1>
+<h1>
+
+Counting down every moment
+
+until your special day arrives...
+
+</h1>
 
 <p>
 
-Thank you for being part of my story 🫶🏻
+because some people
+are worth waiting for ✨
 
 </p>
+
+<div class="grid">
+
+<div class="box">
+
+<div id="days"
+class="number">
+0
+</div>
+
+<div class="label">
+DAYS
+</div>
+
+</div>
+
+<div class="box">
+
+<div id="hours"
+class="number">
+0
+</div>
+
+<div class="label">
+HOURS
+</div>
+
+</div>
+
+<div class="box">
+
+<div id="mins"
+class="number">
+0
+</div>
+
+<div class="label">
+MINS
+</div>
+
+</div>
+
+<div class="box">
+
+<div id="secs"
+class="number">
+0
+</div>
+
+<div class="label">
+SECS
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="wishPopup"
+class="popup">
+
+<h2>
+
+✨ Just one minute left!
+
+</h2>
 
 <p>
 
-Countdown till 29 May 2026 💝
+Close your eyes
+and make a wish 💝
 
 </p>
 
-<div id="countdown"></div>
+<button
+onclick=
 
-<button onclick="fireworks()">
+document.getElementById(
+'wishPopup'
+).style.display='none'>
 
-🎆 Click for Surprise
+Okay ❤️
 
 </button>
 
-<div class="footer">
-
-Every moment with you became my favourite memory ❤️
-
 </div>
+
+<div id="birthdayPopup"
+class="popup">
+
+<h1>
+
+🎂 Happy Birthday ❤️
+
+</h1>
+
+<p>
+
+The wait is over 🫶🏻
+
+</p>
+
+<img
+src=
+
+"https://i.pinimg.com/736x/1f/7f/7c/1f7f7ca25c1cbdf2fd8992ef1a88cb9d.jpg"
+
+>
+
+<p>
+
+Hope this year brings
+you happiness ✨
+
+</p>
 
 </div>
 
 <script>
 
-var countDownDate =
+let target=
+
 new Date(
+
 "May 29, 2026 00:00:00"
+
 ).getTime();
 
-setInterval(function(){
-
-var now=
-new Date().getTime();
-
-var distance=
-countDownDate-now;
-
-var days=
-Math.floor(
-distance/
-(1000*60*60*24)
-);
-
-document.getElementById(
-"countdown"
-).innerHTML=
-days+" Days Left ❤️";
-
-},1000);
-
-function fireworks(){
-
-for(let i=0;i<80;i++){
-
-let item=
-document.createElement(
-"div"
-);
-
-let emoji=
-["🎆","✨","💖","🎉","❤️"];
-
-item.innerHTML=
-emoji[
-Math.floor(
-Math.random()*emoji.length
-)
-];
-
-item.style.position=
-"fixed";
-
-item.style.left=
-Math.random()*100+
-"vw";
-
-item.style.top=
-Math.random()*100+
-"vh";
-
-item.style.fontSize=
-"30px";
-
-document.body.appendChild(
-item
-);
-
-setTimeout(
-()=>item.remove(),
-2500
-);
-
-}
-
-alert(
-
-"Happy Birthday ❤️🎂\n\nMay this year bring you happiness, success and smiles 🫶🏻"
-
-);
-
-}
+let wishShown=false;
 
 setInterval(()=>{
 
-let heart=
-document.createElement(
-"div"
+let now=
+
+new Date().getTime();
+
+let diff=
+
+target-now;
+
+let days=
+Math.floor(
+diff/
+(1000*60*60*24)
 );
 
-heart.className=
-"heart";
-
-heart.innerHTML=
-"💖";
-
-heart.style.left=
-Math.random()*100+
-"vw";
-
-heart.style.animationDuration=
-(5+Math.random()*5)
-+"s";
-
-document.body.appendChild(
-heart
+let hours=
+Math.floor(
+(diff%
+(1000*60*60*24))
+/
+(1000*60*60)
 );
 
-setTimeout(
-()=>heart.remove(),
-8000
+let mins=
+Math.floor(
+(diff%
+(1000*60*60))
+/
+(1000*60)
 );
 
-},800);
+let secs=
+Math.floor(
+(diff%
+(1000*60))
+/
+1000
+);
+
+document
+.getElementById(
+"days"
+).innerHTML=
+days;
+
+document
+.getElementById(
+"hours"
+).innerHTML=
+hours;
+
+document
+.getElementById(
+"mins"
+).innerHTML=
+mins;
+
+document
+.getElementById(
+"secs"
+).innerHTML=
+secs;
+
+if(
+
+days==0
+
+&&
+
+hours==0
+
+&&
+
+mins==1
+
+&&
+
+!wishShown
+
+){
+
+wishShown=true;
+
+document
+.getElementById(
+"wishPopup"
+)
+
+.style.display=
+"block";
+
+}
+
+if(diff<=0){
+
+document
+.getElementById(
+"birthdayPopup"
+)
+
+.style.display=
+"block";
+
+}
+
+},
+
+1000
+
+);
 
 </script>
 
