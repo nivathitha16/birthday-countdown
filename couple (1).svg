@@ -1,0 +1,278 @@
+<svg width="100%" viewBox="0 0 380 520" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Birthday couple illustration</title>
+<desc>A cute cartoon boy and girl celebrating a birthday with a cake between them</desc>
+<defs>
+  <radialGradient id="bgGrad" cx="50%" cy="0%" r="90%">
+    <stop offset="0%" stop-color="#3d0040"/>
+    <stop offset="60%" stop-color="#1a0022"/>
+    <stop offset="100%" stop-color="#0d0010"/>
+  </radialGradient>
+  <radialGradient id="skinB" cx="40%" cy="35%" r="60%">
+    <stop offset="0%" stop-color="#fcd5b4"/>
+    <stop offset="100%" stop-color="#f0a070"/>
+  </radialGradient>
+  <radialGradient id="skinG" cx="40%" cy="35%" r="60%">
+    <stop offset="0%" stop-color="#fde0cc"/>
+    <stop offset="100%" stop-color="#f5b08a"/>
+  </radialGradient>
+  <radialGradient id="cakeTop" cx="50%" cy="30%" r="70%">
+    <stop offset="0%" stop-color="#ffb3cc"/>
+    <stop offset="100%" stop-color="#ff6b95"/>
+  </radialGradient>
+  <radialGradient id="cakeBot" cx="50%" cy="30%" r="70%">
+    <stop offset="0%" stop-color="#ff8fab"/>
+    <stop offset="100%" stop-color="#d63a6a"/>
+  </radialGradient>
+  <radialGradient id="flameR" cx="40%" cy="25%" r="65%">
+    <stop offset="0%" stop-color="#fffde7"/>
+    <stop offset="40%" stop-color="#ffd54f"/>
+    <stop offset="100%" stop-color="#ff6b35"/>
+  </radialGradient>
+  <linearGradient id="hairB" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#2c1a0e"/>
+    <stop offset="100%" stop-color="#1a0a04"/>
+  </linearGradient>
+  <linearGradient id="hairG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#3d1f00"/>
+    <stop offset="100%" stop-color="#1a0a00"/>
+  </linearGradient>
+  <radialGradient id="ballR" cx="30%" cy="28%" r="60%">
+    <stop offset="0%" stop-color="#ff8fab"/>
+    <stop offset="100%" stop-color="#c9184a"/>
+  </radialGradient>
+  <radialGradient id="ballP" cx="30%" cy="28%" r="60%">
+    <stop offset="0%" stop-color="#d4a0ff"/>
+    <stop offset="100%" stop-color="#7b2fbe"/>
+  </radialGradient>
+  <radialGradient id="ballY" cx="30%" cy="28%" r="60%">
+    <stop offset="0%" stop-color="#ffe08a"/>
+    <stop offset="100%" stop-color="#e67e00"/>
+  </radialGradient>
+  <radialGradient id="ballM" cx="30%" cy="28%" r="60%">
+    <stop offset="0%" stop-color="#a8f0d8"/>
+    <stop offset="100%" stop-color="#0d9b6a"/>
+  </radialGradient>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  @keyframes flicker {
+    0%,100%{transform-origin:50% 100%;transform:scaleX(1) scaleY(1) rotate(-2deg)}
+    50%{transform-origin:50% 100%;transform:scaleX(.85) scaleY(1.12) rotate(3deg)}
+  }
+  @keyframes balFloat {
+    0%,100%{transform:translateY(0) rotate(-3deg)}
+    50%{transform:translateY(-8px) rotate(3deg)}
+  }
+  @keyframes heartBeat {
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.18)}
+  }
+  @keyframes girlClap {
+    0%,100%{transform:rotate(0deg)}
+    25%{transform:rotate(-6deg)}
+    75%{transform:rotate(6deg)}
+  }
+  @keyframes starTwinkle {
+    0%,100%{opacity:.4;transform:scale(1)}
+    50%{opacity:1;transform:scale(1.3)}
+  }
+  @keyframes boyLean {
+    0%,100%{transform:rotate(0deg)}
+    50%{transform:rotate(-3deg)}
+  }
+  @keyframes noteFloat {
+    0%,100%{transform:translateY(0) rotate(-5deg);opacity:.7}
+    50%{transform:translateY(-10px) rotate(5deg);opacity:1}
+  }
+  .flame-anim { animation:flicker .3s ease-in-out infinite; }
+  .bal1 { animation:balFloat 2.2s ease-in-out infinite; transform-origin:45px 110px; }
+  .bal2 { animation:balFloat 2.6s .4s ease-in-out infinite; transform-origin:45px 110px; }
+  .bal3 { animation:balFloat 2s .8s ease-in-out infinite; transform-origin:45px 110px; }
+  .bal4 { animation:balFloat 2.4s 1.2s ease-in-out infinite; transform-origin:45px 110px; }
+  .hrt  { animation:heartBeat 1.2s ease-in-out infinite; transform-origin:50% 50%; }
+  .girl-body { animation:girlClap 1s ease-in-out infinite; transform-origin:258px 340px; }
+  .star1 { animation:starTwinkle 2s .0s ease-in-out infinite; }
+  .star2 { animation:starTwinkle 2s .5s ease-in-out infinite; }
+  .star3 { animation:starTwinkle 2s 1s ease-in-out infinite; }
+  .star4 { animation:starTwinkle 2s 1.5s ease-in-out infinite; }
+  .note1 { animation:noteFloat 3s ease-in-out infinite; }
+  .note2 { animation:noteFloat 3s .8s ease-in-out infinite; }
+  .boy-grp { animation:boyLean 2s ease-in-out infinite; transform-origin:120px 360px; }
+</style>
+
+<rect width="380" height="520" fill="url(#bgGrad)"/>
+<circle class="star1" cx="30"  cy="30"  r="2" fill="#ffd6e7" opacity=".5"/>
+<circle class="star2" cx="350" cy="50"  r="1.5" fill="#e0aaff" opacity=".5"/>
+<circle class="star3" cx="80"  cy="80"  r="1.5" fill="#ffd6e7" opacity=".5"/>
+<circle class="star4" cx="310" cy="90"  r="2" fill="#c9d6ff" opacity=".5"/>
+<circle class="star1" cx="200" cy="20"  r="1.5" fill="#fff" opacity=".4"/>
+<circle class="star3" cx="60"  cy="140" r="1.5" fill="#ffd6e7" opacity=".4"/>
+<circle class="star2" cx="330" cy="160" r="1.5" fill="#e0aaff" opacity=".4"/>
+<ellipse cx="190" cy="460" rx="140" ry="24" fill="#ff4f7b" opacity=".08"/>
+
+<g class="bal1">
+  <ellipse cx="35" cy="100" rx="22" ry="26" fill="url(#ballR)"/>
+  <ellipse cx="28" cy="90" rx="7" ry="9" fill="white" opacity=".28"/>
+  <path d="M35 126 Q33 138 35 148" stroke="#c9184a" stroke-width="1.5" fill="none"/>
+</g>
+<g class="bal2">
+  <ellipse cx="75" cy="80" rx="22" ry="26" fill="url(#ballP)"/>
+  <ellipse cx="68" cy="70" rx="7" ry="9" fill="white" opacity=".28"/>
+  <path d="M75 106 Q73 118 75 130" stroke="#7b2fbe" stroke-width="1.5" fill="none"/>
+</g>
+<g class="bal3">
+  <ellipse cx="305" cy="80" rx="22" ry="26" fill="url(#ballM)"/>
+  <ellipse cx="298" cy="70" rx="7" ry="9" fill="white" opacity=".28"/>
+  <path d="M305 106 Q307 118 305 130" stroke="#0d9b6a" stroke-width="1.5" fill="none"/>
+</g>
+<g class="bal4">
+  <ellipse cx="348" cy="100" rx="22" ry="26" fill="url(#ballY)"/>
+  <ellipse cx="341" cy="90" rx="7" ry="9" fill="white" opacity=".28"/>
+  <path d="M348 126 Q350 138 348 148" stroke="#e67e00" stroke-width="1.5" fill="none"/>
+</g>
+
+<rect x="55"  y="165" width="8"  height="5"  rx="1" fill="#ff6b95" opacity=".8" transform="rotate(25,55,165)"/>
+<rect x="310" y="175" width="7"  height="4"  rx="1" fill="#c77dff" opacity=".8" transform="rotate(-30,310,175)"/>
+<rect x="80"  y="210" width="6"  height="4"  rx="1" fill="#43e8b0" opacity=".7" transform="rotate(15,80,210)"/>
+<rect x="295" y="210" width="8"  height="5"  rx="1" fill="#ffbc42" opacity=".8" transform="rotate(-20,295,210)"/>
+<rect x="160" y="155" width="6"  height="4"  rx="1" fill="#ff6b95" opacity=".6" transform="rotate(40,160,155)"/>
+<rect x="220" y="148" width="7"  height="5"  rx="1" fill="#e0aaff" opacity=".7" transform="rotate(-35,220,148)"/>
+<circle cx="100" cy="195" r="4" fill="#ff6b95" opacity=".6"/>
+<circle cx="280" cy="190" r="4" fill="#43e8b0" opacity=".6"/>
+<circle cx="145" cy="170" r="3" fill="#ffbc42" opacity=".5"/>
+<circle cx="240" cy="168" r="3" fill="#c77dff" opacity=".5"/>
+
+<path d="M60 50 Q80 90 70 130 Q60 170 80 200" stroke="#ff6b95" stroke-width="2" fill="none" opacity=".4" stroke-dasharray="4,4"/>
+<path d="M320 50 Q300 90 310 130 Q320 170 300 200" stroke="#c77dff" stroke-width="2" fill="none" opacity=".4" stroke-dasharray="4,4"/>
+<text class="note1" x="50" y="255" font-size="20" fill="#ff8fab" opacity=".7" font-family="serif">♪</text>
+<text class="note2" x="320" y="265" font-size="18" fill="#d4a0ff" opacity=".7" font-family="serif">♫</text>
+<text class="hrt" x="178" y="242" font-size="22" fill="#ff4f7b" opacity=".9" filter="url(#glow)">💕</text>
+
+<rect x="60" y="158" width="260" height="32" rx="10" fill="#ff4f7b" opacity=".18" stroke="#ff4f7b" stroke-width=".5" stroke-opacity=".5"/>
+<text x="190" y="179" text-anchor="middle" font-family="Georgia,serif" font-size="14" font-weight="bold" fill="#ffb3c6" letter-spacing="2">✦ HAPPY BIRTHDAY ✦</text>
+
+<g class="boy-grp">
+  <polygon points="120,192 100,230 140,230" fill="#ff4f7b"/>
+  <polygon points="120,192 103,230 137,230" fill="#ff6b95" opacity=".5"/>
+  <line x1="100" y1="230" x2="140" y2="230" stroke="#fff" stroke-width="2" opacity=".4"/>
+  <circle cx="120" cy="192" r="4" fill="#ffbc42"/>
+  <line x1="120" y1="190" x2="120" y2="178" stroke="#ffbc42" stroke-width="1.5"/>
+  <circle cx="120" cy="176" r="5" fill="#ff4f7b"/>
+  <text x="115" y="220" font-size="8" fill="#fff" opacity=".7">★</text>
+  <ellipse cx="120" cy="258" rx="28" ry="30" fill="url(#skinB)"/>
+  <ellipse cx="120" cy="238" rx="28" ry="14" fill="url(#hairB)"/>
+  <rect x="92" y="236" width="56" height="12" rx="6" fill="url(#hairB)"/>
+  <ellipse cx="92" cy="262" rx="7" ry="9" fill="url(#skinB)"/>
+  <ellipse cx="92" cy="262" rx="4" ry="6" fill="#f09070" opacity=".4"/>
+  <path d="M107 258 Q113 254 119 258" stroke="#3d1f00" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M121 258 Q127 254 133 258" stroke="#3d1f00" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="103" cy="268" rx="8" ry="5" fill="#ff9fb0" opacity=".4"/>
+  <ellipse cx="137" cy="268" rx="8" ry="5" fill="#ff9fb0" opacity=".4"/>
+  <ellipse cx="120" cy="278" rx="7" ry="9" fill="#3d1f00"/>
+  <ellipse cx="120" cy="276" rx="5" ry="5" fill="#ff6b6b" opacity=".7"/>
+  <path d="M132 272 Q145 268 158 270 Q165 271 170 268" stroke="#c9d6ff" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".8"/>
+  <path d="M130 278 Q145 276 162 278 Q170 278 176 276" stroke="#c9d6ff" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".6"/>
+  <path d="M131 284 Q143 284 156 286" stroke="#c9d6ff" stroke-width="1" fill="none" stroke-linecap="round" opacity=".5"/>
+  <rect x="110" y="283" width="20" height="14" rx="4" fill="url(#skinB)"/>
+  <path d="M80 297 Q90 290 110 292 L120 297 L130 292 Q150 290 160 297 L162 370 Q120 378 78 370 Z" fill="#4a1a8a"/>
+  <path d="M110 292 L120 305 L130 292" stroke="#fff" stroke-width="1.5" fill="none" opacity=".5"/>
+  <circle cx="100" cy="320" r="2.5" fill="#7b4fcf" opacity=".6"/>
+  <circle cx="115" cy="335" r="2.5" fill="#7b4fcf" opacity=".6"/>
+  <circle cx="130" cy="318" r="2.5" fill="#7b4fcf" opacity=".6"/>
+  <circle cx="145" cy="332" r="2.5" fill="#7b4fcf" opacity=".6"/>
+  <path d="M82 315 Q65 330 60 355" stroke="url(#skinB)" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <ellipse cx="58" cy="358" rx="9" ry="7" fill="url(#skinB)"/>
+  <path d="M158 315 Q172 330 175 348" stroke="url(#skinB)" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <ellipse cx="176" cy="351" rx="9" ry="7" fill="url(#skinB)"/>
+  <rect x="95"  y="368" width="20" height="62" rx="8" fill="#2d0d60"/>
+  <rect x="120" y="368" width="20" height="62" rx="8" fill="#2d0d60"/>
+  <ellipse cx="105" cy="432" rx="14" ry="8" fill="#1a0a30"/>
+  <ellipse cx="130" cy="432" rx="14" ry="8" fill="#1a0a30"/>
+</g>
+
+<rect x="184" y="285" width="12" height="46" rx="3" fill="#fff" opacity=".9"/>
+<rect x="184" y="285" width="12" height="6"  rx="2" fill="#ff6b95" opacity=".6"/>
+<g class="flame-anim" filter="url(#glow)">
+  <ellipse cx="190" cy="278" rx="7" ry="10" fill="url(#flameR)"/>
+  <ellipse cx="190" cy="282" rx="4" ry="5"  fill="#fffde7" opacity=".8"/>
+  <ellipse cx="190" cy="279" rx="12" ry="14" fill="#ffbc42" opacity=".15"/>
+</g>
+<rect x="160" y="331" width="60" height="38" rx="8" fill="url(#cakeTop)"/>
+<path d="M164 331 Q170 322 176 331 Q182 322 188 331 Q194 322 200 331 Q206 322 212 331 Q216 324 216 331" fill="#fff" opacity=".6"/>
+<circle cx="175" cy="348" r="4" fill="#fff" opacity=".7"/>
+<circle cx="190" cy="342" r="4" fill="#ffbc42" opacity=".8"/>
+<circle cx="205" cy="348" r="4" fill="#fff" opacity=".7"/>
+<rect x="150" y="366" width="80" height="48" rx="10" fill="url(#cakeBot)"/>
+<path d="M154 366 Q162 356 170 366 Q178 356 186 366 Q194 356 202 366 Q210 356 218 366 Q224 358 226 366" fill="#ffb3c6" opacity=".5"/>
+<text x="172" y="397" font-size="16" fill="#fff" opacity=".8">♥</text>
+<text x="192" y="397" font-size="16" fill="#ffbc42" opacity=".8">♥</text>
+<ellipse cx="190" cy="414" rx="50" ry="8" fill="#e0aaff" opacity=".3"/>
+
+<polygon points="258,196 238,232 278,232" fill="#c77dff"/>
+<polygon points="258,196 241,232 275,232" fill="#d4a0ff" opacity=".5"/>
+<line x1="238" y1="232" x2="278" y2="232" stroke="#fff" stroke-width="2" opacity=".4"/>
+<circle cx="258" cy="196" r="4" fill="#ff4f7b"/>
+<ellipse cx="248" cy="208" rx="6" ry="4" fill="#ff4f7b" transform="rotate(-20,248,208)"/>
+<ellipse cx="268" cy="208" rx="6" ry="4" fill="#ff4f7b" transform="rotate(20,268,208)"/>
+<circle cx="258" cy="208" r="4" fill="#ff6b95"/>
+<text x="252" y="225" font-size="8" fill="#fff" opacity=".7">★</text>
+<ellipse cx="258" cy="262" rx="30" ry="32" fill="url(#skinG)"/>
+<ellipse cx="258" cy="240" rx="31" ry="16" fill="url(#hairG)"/>
+<path d="M228 252 Q222 270 226 295 Q228 305 232 308" stroke="#3d1f00" stroke-width="10" stroke-linecap="round" fill="none"/>
+<path d="M288 252 Q294 270 290 295 Q288 305 284 308" stroke="#3d1f00" stroke-width="10" stroke-linecap="round" fill="none"/>
+<path d="M228 250 Q220 265 225 280" stroke="#2c1504" stroke-width="3" fill="none" opacity=".5"/>
+<path d="M288 250 Q296 265 291 280" stroke="#2c1504" stroke-width="3" fill="none" opacity=".5"/>
+<ellipse cx="288" cy="266" rx="7" ry="9" fill="url(#skinG)"/>
+<ellipse cx="288" cy="266" rx="4" ry="6" fill="#f0b09a" opacity=".4"/>
+<circle cx="290" cy="273" r="3" fill="#ff4f7b"/>
+<ellipse cx="244" cy="261" rx="10" ry="11" fill="white"/>
+<ellipse cx="272" cy="261" rx="10" ry="11" fill="white"/>
+<ellipse cx="244" cy="263" rx="7" ry="8" fill="#5c2c00"/>
+<ellipse cx="272" cy="263" rx="7" ry="8" fill="#5c2c00"/>
+<ellipse cx="244" cy="264" rx="4" ry="5" fill="#1a0a00"/>
+<ellipse cx="272" cy="264" rx="4" ry="5" fill="#1a0a00"/>
+<circle cx="247" cy="260" r="2.5" fill="white"/>
+<circle cx="275" cy="260" r="2.5" fill="white"/>
+<path d="M235 253 Q244 248 253 253" stroke="#2c1504" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M263 253 Q272 248 281 253" stroke="#2c1504" stroke-width="2" fill="none" stroke-linecap="round"/>
+<line x1="238" y1="251" x2="236" y2="247" stroke="#2c1504" stroke-width="1.5"/>
+<line x1="244" y1="249" x2="244" y2="245" stroke="#2c1504" stroke-width="1.5"/>
+<line x1="250" y1="251" x2="252" y2="247" stroke="#2c1504" stroke-width="1.5"/>
+<line x1="266" y1="251" x2="264" y2="247" stroke="#2c1504" stroke-width="1.5"/>
+<line x1="272" y1="249" x2="272" y2="245" stroke="#2c1504" stroke-width="1.5"/>
+<line x1="278" y1="251" x2="280" y2="247" stroke="#2c1504" stroke-width="1.5"/>
+<ellipse cx="234" cy="276" rx="10" ry="6" fill="#ff9fb0" opacity=".45"/>
+<ellipse cx="282" cy="276" rx="10" ry="6" fill="#ff9fb0" opacity=".45"/>
+<path d="M255 272 Q258 278 261 272" stroke="#d08060" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M241 285 Q258 300 275 285" stroke="#3d1f00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<rect x="248" y="289" width="20" height="14" rx="4" fill="url(#skinG)"/>
+<path d="M215 300 Q228 292 248 294 L258 300 L268 294 Q288 292 300 300 L304 375 Q258 385 212 375 Z" fill="#e040a0"/>
+<circle cx="240" cy="325" r="5" fill="#ff6bb5" opacity=".5"/>
+<circle cx="258" cy="338" r="5" fill="#ff6bb5" opacity=".5"/>
+<circle cx="276" cy="325" r="5" fill="#ff6bb5" opacity=".5"/>
+<ellipse cx="248" cy="302" rx="8" ry="5" fill="#ff4f7b" transform="rotate(-15,248,302)"/>
+<ellipse cx="268" cy="302" rx="8" ry="5" fill="#ff4f7b" transform="rotate(15,268,302)"/>
+<circle cx="258" cy="302" r="5" fill="#ff6b95"/>
+<g class="girl-body">
+  <path d="M300 318 Q318 300 322 280" stroke="url(#skinG)" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <ellipse cx="323" cy="276" rx="10" ry="8" fill="url(#skinG)"/>
+  <path d="M215 318 Q198 302 192 282" stroke="url(#skinG)" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <ellipse cx="190" cy="278" rx="10" ry="8" fill="url(#skinG)"/>
+</g>
+<rect x="233" y="373" width="20" height="64" rx="8" fill="#b02080"/>
+<rect x="258" y="373" width="20" height="64" rx="8" fill="#b02080"/>
+<ellipse cx="243" cy="437" rx="16" ry="8" fill="#ff4f7b"/>
+<ellipse cx="268" cy="437" rx="16" ry="8" fill="#ff4f7b"/>
+<rect x="252" y="432" width="4" height="10" rx="2" fill="#d63a6a"/>
+<rect x="277" y="432" width="4" height="10" rx="2" fill="#d63a6a"/>
+
+<text class="star1" x="42"  y="310" font-size="14" fill="#ffbc42" opacity=".8">✦</text>
+<text class="star2" x="330" y="320" font-size="14" fill="#c9d6ff" opacity=".8">✦</text>
+<text class="star3" x="100" y="440" font-size="12" fill="#ff8fab" opacity=".6">✦</text>
+<text class="star4" x="275" y="450" font-size="12" fill="#a8f0d8" opacity=".6">✦</text>
+<rect x="0" y="488" width="380" height="32" fill="#1a0010" opacity=".7"/>
+<text x="190" y="509" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#ffb3c6" letter-spacing="1">💨 He blows the candle… She cheers! 🎉</text>
+</svg>
